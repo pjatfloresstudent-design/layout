@@ -1,0 +1,84 @@
+/* Modern CSS Reset for Vite */
+
+/* 1. Use a more intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Set core root defaults */
+html {
+  /* Prevent font scaling on orientation change in iOS */
+  -webkit-text-size-adjust: 100%;
+  /* Smooth scroll support */
+  scroll-behavior: smooth;
+  /* Prevent horizontal overflow scrollbars */
+  overflow-x: hidden;
+}
+
+/* 4. Set core body defaults */
+body {
+  min-height: 100vh;
+  /* System font stack or default sans-serif */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  /* Standard modern line height and text rendering */
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 5. Make media elements responsive and easier to work with */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form inputs & buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* 7. Remove list styles where appropriate */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 8. Balance text wrapping on headings */
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+p {
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
+
+/* 9. Remove default button styling */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 10. Link default styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
